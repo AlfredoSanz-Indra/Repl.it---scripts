@@ -4,7 +4,7 @@ def calcMonthlyFee() :
   result = theAmount / months
 
   print('--------------------------')
-  print('MonthlyFee:' + str(round(result, 2)))
+  print('MonthlyFee:' + str(round(result, 4)))
   print('--------------------------')
 #
 
@@ -14,17 +14,17 @@ def calcRefiFinalpayment() :
   print('--------------------------')
   for month in refiFinalPaymentMonths:
     result = finalPayment / month
-    print('Refi-> ' + str(month) + ': ' + str(round(result, 2)))
+    print('Refi-> ' + str(month) + ': ' + str(round(result, 4)))
   #
   print('--------------------------')
 #
 
-amount = 450.1
-months = 60
-initialPayment = 100.0
-finalPayment = 100.0
+amount = 800.0
+months = 36
+initialPayment = 210.0
+finalPayment = 200
 refiFinalPayment = True
-refiFinalPaymentMonths = [6, 12]
+refiFinalPaymentMonths = [6]
 
 print('totalAmount:' + str(amount))
 print('months:' + str(months))
